@@ -1,0 +1,24 @@
+class OutputWriter {
+	private PrintWriter output;
+	public OutputWriter() {
+		this(System.out);
+	}
+	public OutputWriter(OutputStream out) {
+		output = new PrintWriter(out);
+	}
+	public OutputWriter(Writer writer) {
+		output = new PrintWriter(writer);
+	}
+	public void print(Object o) {
+		output.print(o);
+	}
+
+	public void println() {
+		output.println();
+	}
+
+	public void close() {
+		output.close();
+	}
+}
+PrintWriter out = new PrintWriter(System.out);

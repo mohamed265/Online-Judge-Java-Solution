@@ -1,0 +1,5 @@
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		long size = Integer.parseInt(br.readLine());
+		
+		StringTokenizer st = new StringTokenizer(br.readLine());
